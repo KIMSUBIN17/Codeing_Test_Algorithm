@@ -1,3 +1,5 @@
+//https://programmers.co.kr/learn/courses/30/lessons/12912
+
 def solution(a, b):
     answer = 0
     if a>=b:
