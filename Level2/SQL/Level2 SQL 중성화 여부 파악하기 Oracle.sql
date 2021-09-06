@@ -20,3 +20,7 @@ select case when 조건1 then 출력1
 from 테이블이름;
 '''
 
+'''
+decode사용하면 like비교를 할 수 없음->case문사용해야함
+'''
+
