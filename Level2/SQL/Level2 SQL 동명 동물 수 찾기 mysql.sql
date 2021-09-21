@@ -7,3 +7,7 @@ FROM ANIMAL_INS
 GROUP BY NAME
 HAVING COUNT(NAME) > 1
 ORDER BY NAME
+
+
+/*풀이 : 2번이상 쓰인 이름을 group by로 묶음
+group by의 조건은 where절이 아니라 having절 사용*/
