@@ -1,13 +1,25 @@
+/* 링크 : https://programmers.co.kr/learn/courses/30/lessons/59412 */
+
+SELECT HOUR, COUNT(*) AS "COUNT"
+FROM
+    (SELECT TO_CHAR(DATETIME,'HH24') AS HOUR
+    FROM ANIMAL_OUTS)
+WHERE HOUR BETWEEN 09 AND 19
+GROUP BY HOUR
+ORDER BY HOUR;
+
+
+/*풀이:TO_CHAR()와 서브쿼리 이용, DATE 자료형을 시간별로 추출하고 GROUP BY절 활용해 해결
+1. TO_CHAR()이용해서 '시간'값만 뽑아 HOUR이라고 정함
+2. where절에 between 09 and 19사용해 09:00~19:59까지의 데이터만 조회하도록함
+3. GROUP BY 이용해 HOUR로 그룹화함
+
+*/
+
+/*다른 풀이
 SELECT TO_CHAR(DATETIME,'HH24') AS HOUR, COUNT(*) AS COUNT
 FROM ANIMAL_OUTS
 WHERE TO_CHAR(DATETIME,'HH24') BETWEEN 09 AND 19
 GROUP BY TO_CHAR(DATETIME,'HH24')
 ORDER BY TO_CHAR(DATETIME,'HH24')
-
-
-'''
-DATE 자료형을 시간별로 추출하고 GROUP BY절 활용해 해결
-1. 자료형이 DATE인 DATETIME칼럼의 시간 추출하기 위해 to_char 이용
-2. where절에 between 09 and 19사용해 09:00~19:59까지의 데이터만 조회하도록함
-3. 시간을 기준으로 GROUP BY, ORDER BY 사용해 그룹화,정렬화진행
-'''
+*/
