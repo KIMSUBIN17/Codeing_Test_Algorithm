@@ -14,6 +14,9 @@ def solution(array, commands):
 
 '''
 #풀이
+for문으로 commands를 순회하며 각각의 결과를 answer 리스트에 담음.
+for문 안에서는 각 경우에 대해 기존의 리스트를 인덱싱한 후 sort함수로 정렬
+
 list[시작 : 끝]
 - 시작은 포함, 끝은 포함X
 start의 인덱스는 + 1이 되어있기때문에 start 인덱스는 - 1을 해준다. 
