@@ -33,6 +33,11 @@ ex2. 주어진 배열이 [3,3,3,2,2,2] 인 경우 result = 2이다.
 -> diff_cnt = 2, choice = 3
 diff_cnt < choice이므로 최대로 데려갈 수 있는 폰켓몬 종류의 수는 2마리(answer = diff_cnt)
 
+diff_cnt = len(set(nums))
+-> set() 함수 이용 : 중복된 수 없애고 list로 만든 후 len 구함
+
+
+
 
 * 연산자
 / : 나누기
