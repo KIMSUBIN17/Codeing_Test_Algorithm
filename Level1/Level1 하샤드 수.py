@@ -41,6 +41,19 @@ arr	return
 13의 모든 자릿수의 합은 4입니다. 13은 4로 나누어 떨어지지 않으므로 13은 하샤드 수가 아닙니다.
 
 #다른 사람 풀이
+ver.간단
+def solution(n):
+    # n은 하샤드 수 인가요?
+    return n % sum([int(c) for c in str(n)]) == 0
+
+def solution(n):
+    # n은 하샤드 수 인가요?
+    s=sum([int(i) for i in str(n)])
+    if n%s == 0:
+        return True
+    return False
+
+
 
 
 '''
