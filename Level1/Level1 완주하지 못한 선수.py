@@ -37,6 +37,9 @@ def solution(participant, completion):
     return list(answer.keys())[0]
 
 *counter 사용
+딕셔너리 형태로 변환해 counter로 각 문자를 카운팅함
+그리고 participant에서 completion을 빼면 완주하지 못한 사람을 출력가능
+
 
 
 --------------------
