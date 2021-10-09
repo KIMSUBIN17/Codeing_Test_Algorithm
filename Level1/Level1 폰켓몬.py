@@ -12,8 +12,9 @@ def solution(nums):
     if choice > diff_cnt:
         answer = diff_cnt
     #선택하는 폰켓몬 수가 서로 다른 폰켓몬 종류의 개수보다 작거나 같으면
-    eles:
+    else:
         answer = choice
+        
     return answer
 
 '''
@@ -37,13 +38,25 @@ diff_cnt = len(set(nums))
 -> set() 함수 이용 : 중복된 수 없애고 list로 만든 후 len 구함
 
 
-
-
 * 연산자
 / : 나누기
 // : 나누기 연산 후 소수점 이하의 수 버리고, 정수부분의 수만 구함
 
+#다른 사람 풀이
+def solution(ls):
+    return min(len(ls)/2, len(set(ls)))
 
+def solution(nums):
+    return min(len(set(nums)), len(nums)//2)
+
+def solution(nums):
+
+    a = len(nums)/2
+    nums = list(set(nums))
+
+    if a < len(nums): answer = a
+    else: answer = len(nums)
+    return answer
 --------------------
 문제 설명
 당신은 폰켓몬을 잡기 위한 오랜 여행 끝에, 홍 박사님의 연구실에 도착했습니다. 홍 박사님은 당신에게 자신의 연구실에 있는 총 N 마리의 폰켓몬 중에서 N/2마리를 가져가도 좋다고 했습니다.
