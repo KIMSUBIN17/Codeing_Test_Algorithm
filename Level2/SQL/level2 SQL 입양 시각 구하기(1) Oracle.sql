@@ -21,8 +21,12 @@ ORDER BY HOUR;
 #형변환 함수
 TO_CHAR(날짜 or 숫자, '원하는 형태') : 날짜or숫자를 문자로 형변환함.
 문자는 2번째 인자에서 지정한 형태로 출력됨
+TO_CHAR(DATETIME,'HH24') -> 하루를 24시간으로 표시
 ex. TO_CHAR(SYSDATE,'YYYY') / TO_CHAR(SYSDATE,'HH12') -> 하루를 12시간으로 표시
+
 TO_DATE(문자) : 날짜처럼 생겼지만 데이터형이 날짜가 아니라 문자인 데이터를 날짜 데이터형으로 바꿔줌
+
+
 
 
 
