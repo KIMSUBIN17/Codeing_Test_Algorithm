@@ -37,7 +37,8 @@ GROUP BY HOUR
 ORDER BY HOUR;
 
 
-
+# 참고소스 + LEVEL함수 관련 내용
+https://blue-boy.tistory.com/195
 
 
 #문제
@@ -82,7 +83,6 @@ HOUR	COUNT
 23	0
 
 
-# LEVEL함수 관련 참고 자료
-https://blue-boy.tistory.com/195
+
 
 '''
