@@ -13,6 +13,13 @@ ORDER BY ANIMAL_ID
 
 
 '''
+참고링크 : https://blue-boy.tistory.com/196?category=743648
+
+
+
 키 값으로 INNER JOIN을 한 뒤 ANIMAL_INS에서는 Intact로 시작하는 단어,
 ANIMAL_OUTS에서는 Neutered나 Spayed로 시작하는 단어를 찾음
 '''
+
+
+
