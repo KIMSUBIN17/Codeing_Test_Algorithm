@@ -24,4 +24,10 @@ ANIMAL_OUTS 테이블은 동물 보호소에서 <입양 보낸> 동물의 정보
 ROWNUM과 인라인 뷰 사용해 DATETIME을 내림차순 정렬
 ROWNUM <4 : ROWNUM이 4미만인 값 추출
 
+ROWNUM=1 과 같은 방식이 안되는 이유
+ROWNUM은 테이블 WHERE절이 실행될 때 조건에 맞으면 1부여
+맞지않으면 번호 부여하지 않고 버리는 방식
+
+참고링크 : https://jhnyang.tistory.com/454
+
 '''
