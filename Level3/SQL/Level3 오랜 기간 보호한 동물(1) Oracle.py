@@ -27,6 +27,7 @@ ROWNUM <4 : ROWNUM이 4미만인 값 추출
 ROWNUM=1 과 같은 방식이 안되는 이유
 ROWNUM은 테이블 WHERE절이 실행될 때 조건에 맞으면 1부여
 맞지않으면 번호 부여하지 않고 버리는 방식
+-> ROWNUM=1이 아니면 어떤 결과도 추출될수가 없음!
 
 참고링크 : https://jhnyang.tistory.com/454
 
