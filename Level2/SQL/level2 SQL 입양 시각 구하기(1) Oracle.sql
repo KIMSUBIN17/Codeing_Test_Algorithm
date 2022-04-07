@@ -26,7 +26,13 @@ ex. TO_CHAR(SYSDATE,'YYYY') / TO_CHAR(SYSDATE,'HH12') -> 하루를 12시간으�
 
 TO_DATE(문자) : 날짜처럼 생겼지만 데이터형이 날짜가 아니라 문자인 데이터를 날짜 데이터형으로 바꿔줌
 
+SELECT TO_CHAR(SYSDATE,'YYYYMMDD')
+      ,TO_CHAR(SYSDATE,'YYYY/MM/DD')
+      ,TO_CHAR(SYSDATE,'YYYY-MM-DD')
+      ,TO_CHAR(SYSDATE,'YYYY-MM-DD HH24:MI:SS')
+  FROM dual
 
+YYYY:년 MM:월, DD:일, HH24:24시간, HH:12시간, ,MI :분, SS:
 
 
 
