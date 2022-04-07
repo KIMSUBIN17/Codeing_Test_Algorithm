@@ -38,6 +38,8 @@ ORDER BY HOUR;
 
 
 
+
+
 #문제
 문제 설명
 ANIMAL_OUTS 테이블은 동물 보호소에서 입양 보낸 동물의 정보를 담은 테이블입니다. ANIMAL_OUTS 테이블 구조는 다음과 같으며, ANIMAL_ID, ANIMAL_TYPE, DATETIME, NAME, SEX_UPON_OUTCOME는 각각 동물의 아이디, 생물 종, 입양일, 이름, 성별 및 중성화 여부를 나타냅니다.
@@ -78,5 +80,9 @@ HOUR	COUNT
 21	0
 22	0
 23	0
+
+
+# LEVEL함수 관련 참고 자료
+https://blue-boy.tistory.com/195
 
 '''
