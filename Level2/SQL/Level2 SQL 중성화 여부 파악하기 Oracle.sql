@@ -31,7 +31,12 @@ select case when 조건1 then 출력1
        end "출력할컬럼이름Z"
 from 테이블이름;
 
---> ELSE부분 생략 가능 / 만족하는 조건 없으면 NULL리턴
+--> ELSE부분 생략 가능 만족하는 조건 없으면 NULL리턴
+--> 비교연산자, 범위연산 사용 가능 / WHERE절에 사용 가능
+
+
+* CASE표현식 참고 자료
+https://gent.tistory.com/311
 
 
 #CASE WHEN문
