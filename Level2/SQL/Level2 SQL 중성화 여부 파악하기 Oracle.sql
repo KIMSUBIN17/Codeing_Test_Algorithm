@@ -31,6 +31,8 @@ select case when 조건1 then 출력1
        end "출력할컬럼이름Z"
 from 테이블이름;
 
+--> ELSE부분 생략 가능 / 만족하는 조건 없으면 NULL리턴
+
 
 #CASE WHEN문
 CASE WHEN [조건] THEN [리턴값]
@@ -39,7 +41,20 @@ CASE WHEN [조건] THEN [리턴값]
      END # 생략 불가
      AS [재명명필드명]
 
-->decode사용하면 like비교를 할 수 없음->case문사용해야함
+
+cf) DECODE함수 --> 오라클에서 IF문과 비슷한 기능
+BUT, DECODE 함수의 조건이 많아지면 쿼리의 가독성이 떨어지고 유지보수가 어려움
+DECODE 함수 내부에 또 다른 DECODE함수 사용하는 건 웬만하면 자제
+오라클SQL에서만 사용할 수 있는 비표준 함수
+
+#DECODE함수 대체 기능 : CASE표현식
+가독성이 좋고 더 많은 기능 제공
+--> 조건이 복잡하면 CASE표현식 사용 권장
+
+
+#DECODE 사용 못하는 이유
+decode사용하면 like비교를 할 수 없음 -> case문사용해야함
+
 
 
 '''
