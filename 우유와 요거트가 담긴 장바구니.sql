@@ -11,7 +11,7 @@ order by cart_id
 
 
 /*
-
+ver.Oracle
 where name in ('Milk','Yogurt')
 --> 구입한 상품 중 Milk 또는 Yogurt 가 포함되어 있는 것만 
 
