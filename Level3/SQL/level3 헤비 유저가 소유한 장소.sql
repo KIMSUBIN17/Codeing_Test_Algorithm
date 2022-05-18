@@ -1,3 +1,7 @@
+/* 링크 : https://programmers.co.kr/learn/courses/30/lessons */
+/*
+ver.Oracle
+*/
 
 SELECT *
 FROM PLACES A 
