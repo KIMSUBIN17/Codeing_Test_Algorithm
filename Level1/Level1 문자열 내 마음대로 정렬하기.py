@@ -1,6 +1,15 @@
 /* 링크 : https://programmers.co.kr/learn/courses/30/lessons/12915 */
 
 def solution(strings, n):
+    strings.sort()
+    return sorted(strings,key=lambda x:x[n])
+
+
+
+'''# 다른풀이
+1.
+
+def solution(strings, n):
     answer = []
     new = []
     
@@ -13,6 +22,21 @@ def solution(strings, n):
     
     return answer
     
+
+
+2. lambda식 사용
+def solution(strings,n):
+    answer = sorted(strings, key = lambda string: (string[n], string))
+    
+    return answer
+
+
+
+
+'''		
+		
+		
+  
 
 '''
 #풀이
