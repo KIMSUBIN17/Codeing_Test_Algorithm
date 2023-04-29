@@ -17,7 +17,7 @@ def solution(cipher, code):
 -> 인덱스로 치면 3,7,11,15,19번째임
 
 #다른 사람 풀이
-# range(start,stop,step) 사용
+#1.range(start,stop,step) 사용
 start부터 stop까지 step만큼 !
 배열이므로 code-1 해야함
 
@@ -26,4 +26,11 @@ def solution(cipher,code):
     for i in range(code-1,len(cipher),code):
     answer+=cipher[i]
     return answer
+    
+    
+#2. 슬라이싱 사용
+def solution(cipher,code):
+    answer = cipher[code-1::code]
+    return answer
+    
 '''
