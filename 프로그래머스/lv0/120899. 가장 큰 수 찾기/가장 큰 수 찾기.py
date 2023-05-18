@@ -3,6 +3,6 @@ def solution(array):
 
 '''
 list에서 가장 큰수 찾기 : max()
-가장 작은 수 찾기 : min()
+list에서 가장 작은 수 찾기 : min()
 list에서 특정 값의 index추출 : index()
 '''
