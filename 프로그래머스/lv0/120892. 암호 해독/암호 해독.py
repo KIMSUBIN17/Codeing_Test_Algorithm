@@ -32,5 +32,5 @@ def solution(cipher,code):
 def solution(cipher,code):
     answer = cipher[code-1::code]
     return answer
-    
+cipher의 전체 글자 수 중 code-1 간격만큼 슬라이싱    
 '''
