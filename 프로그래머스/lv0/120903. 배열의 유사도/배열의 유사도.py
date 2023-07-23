@@ -1,8 +1,8 @@
 def solution(s1, s2):
     answer = 0
-    for i in s1:
-        if i in s2:
-            answer += 1
+    for i in s1:    #s1:배열값 : 'a','b','c'
+        if i in s2:     #'a'가  s2개 1개라도 있다면
+            answer += 1     # 값이 있으면 1추가
     return answer
 
 '''
