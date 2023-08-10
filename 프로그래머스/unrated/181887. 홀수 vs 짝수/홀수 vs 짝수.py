@@ -5,3 +5,9 @@ def solution(num_list):
         return even_sum
     else:
         return odd_sum
+    
+'''
+#짧은풀이
+def solution(num_list):
+    return max(sum(num_list[::2]), sum(num_list[1::2]))
+'''
