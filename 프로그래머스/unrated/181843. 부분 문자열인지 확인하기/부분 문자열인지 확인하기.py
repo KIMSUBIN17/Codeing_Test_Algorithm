@@ -4,4 +4,3 @@ def solution(my_string, target):
         return 1
     else:
         return 0
-    return answer
