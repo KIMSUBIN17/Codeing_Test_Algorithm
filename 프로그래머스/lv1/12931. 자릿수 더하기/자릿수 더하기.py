@@ -7,6 +7,9 @@ def solution(n):
 
 '''# pythoninc code
 def solution(n):
+    return sum([int(i) for i in str(n)])
+    
+def solution(n):
     answer = sum((map(int,list(str(n)))))
     return answer
 '''
