@@ -1,4 +1,18 @@
 def solution(arr):
+    answer = [] # 숫자 담을 리스트
+    last = -1 # 마지막으로 넣었던 숫자 / arr요소들이 0이상의 정수이기때문에 -1로 선언
+    
+    for i in arr:
+        if i == last: # 현재 숫자 i가 마지막으로 넣은 숫자와 같으면
+            continue # 패스
+        answer.append(i) # 같지않으면 i를 answer에 추가
+        last = i #마지막으로 담은 숫자를 i에 넣음
+    return answer
+    
+    
+'''
+
+def solution(arr):
     answer = []
     for i in range(len(arr)): # [1,1,3,3,8,1,1] --> 7, 0123456
         if i == 0:    #배열의 첫번째 값
@@ -8,7 +22,6 @@ def solution(arr):
     return answer
     
     
-'''
 i값과 i+1값을 비교하면 배열의 마지막을 확인할 경우, 배열 밖의 값과 비교를 할 수 없으므로 out of range오류 발생
 --> i값과 i-1값 비교함
 -->  첫번째 값은 이전값과 비교할 수 없으므로 일단 배열에 넣음
