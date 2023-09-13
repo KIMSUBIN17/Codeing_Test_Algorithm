@@ -4,6 +4,7 @@ def solution(n):
     
     return list(map(int, arr))
 
+
 '''
 def solution(n):
     answer = []
