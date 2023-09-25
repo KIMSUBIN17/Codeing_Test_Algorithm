@@ -4,6 +4,7 @@ def solution(numbers):
     for i in range(len(numbers)):
         for j in range(i+1, len(numbers)):
             answer.append(numbers[i] + numbers[j])
+    #set()사용해서 중복제거
     answer=list(set(answer))
     answer.sort()
     return answer
