@@ -7,3 +7,12 @@ def solution(s):
     max_s = max(s_int)
     
     return f"{min_s} {max_s}"
+
+
+
+'''
+더 짧은 풀이
+def solution(s):
+    s = list(map(int,s.split()))
+    return str(min(s)) + " " + str(max(s))
+'''
