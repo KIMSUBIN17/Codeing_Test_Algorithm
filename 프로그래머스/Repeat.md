@@ -15,6 +15,7 @@ https://school.programmers.co.kr/learn/courses/30/lessons/159994
 
 * Level 2
 - 최댓값과 최솟값 : https://school.programmers.co.kr/learn/courses/30/lessons/12939?language=python3
-- 다음 큰 숫자 : https://school.programmers.co.kr/learn/courses/30/lessons/12911
+- 다음 큰 숫자(완전탐색) : https://school.programmers.co.kr/learn/courses/30/lessons/12911
+- 
 
 * Level 3
