@@ -18,5 +18,7 @@ ORA-00937: not a single-group group function 오류 발생
 그룹함수를 사용하면 GROUP BY 절을 추가해야하며, GROUP BY 절에는 SELECT 절에 있는 모든 컬럼을 작성해야함
 2. 동일한 날짜, 회원 ID, 상품 ID 조합에 대해서는 하나의 판매 데이터만 존재
 --> USERS 회원수 COUNT할 때 DISTINCT로 중복제거 
+3. MONTH 값 구할 때 TO_CHAR만 하니 월 값이 01,02,03이런식으로 나와서 계속 오답처리됨
+--> TO_CHAR 형변환값을 TO_NUMBER로 한번더 감싸서 1,2,3,4... 처럼 정수로만 표현되도록 함(정답!)
 */
 
