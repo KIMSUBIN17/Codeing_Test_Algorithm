@@ -1,5 +1,6 @@
 def solution(myString):
     answer = myString.lower()
+    #replace('a','A') --> a를 A로 변환
     answer = answer.replace('a','A')
     return answer
 
