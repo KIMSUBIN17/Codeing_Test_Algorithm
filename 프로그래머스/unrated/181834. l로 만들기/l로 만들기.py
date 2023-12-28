@@ -2,7 +2,7 @@ def solution(myString):
     result = ''
     #문자열 myString을 한글자씩 순회하면서
     for char in myString:
-        #l보다 앞서는 문자는 l로 바꾸고
+        #l보다 앞서는 문자라면 l로 변환
         if char < 'l':
             result += 'l'
         #아니면 그대로 둔다
