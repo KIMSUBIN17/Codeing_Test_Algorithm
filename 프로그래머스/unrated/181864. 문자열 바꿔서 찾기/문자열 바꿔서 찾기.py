@@ -6,3 +6,12 @@ def solution(myString, pat):
         return 1
     else:
         return 0
+    
+
+    
+'''
+#다른풀이
+def solution(myString, pat):
+    converted_string = myString.replace('A', 'X').replace('B', 'A').replace('X', 'B')
+    return 1 if pat in converted_string else 0
+'''
