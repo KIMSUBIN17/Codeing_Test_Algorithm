@@ -1,5 +1,18 @@
-SELECT a.flavor
-from first_half a
-join july b on a.flavor = b.flavor
-group by a.flavor
-order by sum(b.total_order) + sum(a.total_order) desc limit 3
+-- 코드를 입력하세요
+SELECT FLAVOR
+FROM (
+    SELECT FLAVOR
+    FROM (
+        SELECT *
+        FROM FIRST_HALF 
+            UNION ALL
+        SELECT *
+        FROM JULY
+    )
+    GROUP BY FLAVOR
+    ORDER BY sum(TOTAL_ORDER) DESC
+)
+WHERE ROWNUM <= 3
+/*
+FIRST_HALF 테이블과 JULY XPDLQMFDMF FLAVOR 기준으로 INNER JOIN 하고, FLAVOR로 GROUP BY 해서 각 테이블의 TOTAL_ORDER를 SUM 해서 출력
+*/
