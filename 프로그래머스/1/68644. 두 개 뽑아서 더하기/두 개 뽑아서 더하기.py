@@ -9,6 +9,8 @@ def solution(numbers):
             #두 수의 합을 리스트에 추가
             answer.append(numbers[i] + numbers[j])
     #set()사용해서 중복제거
+    #set(answer)로 중복 제거 후 유일한값만 가지는 set를 만들었지만,  set는 원소들의 순서가 보장되지않으므로
+    #배열에 오름차순으로 담아 리턴하라는 문제 조건에 따라 결과를 리스트로 반환하기 위해서 answer를  다시 리스트로 변환하고, 오름차순으로 sort정렬함
     answer=list(set(answer))
     #리스트 오름차순 정렬
     answer.sort()
