@@ -35,5 +35,5 @@ ex. t="3141592", p="271" 부분문자열 추출 시
 - for i in range(len(t)+ 1):
 >> ValueError: invalid literal for int() with base 10: '' 오류발생
 --> 범위가 너무 커짐; t문자열의 모든 부분 문자열을 고려하게 되는데 문제의 요구사항과 맞지않음
-
+--> len(t) - p_len + 1로 p와같은길이의 모든 가능한 부분 문자열을 고려하도록 함
 '''
