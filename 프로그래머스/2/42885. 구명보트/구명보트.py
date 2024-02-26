@@ -8,7 +8,8 @@ def solution(people, limit):
     #start:배열의 가장 왼쪽(처음)인덱스로 0으로 초기화
     #end:배열의 가장 오른쪽(마지막)인덱스로,people배열의 길이에서 1뺀값으로 초기화_people배열의 인덱스는 0부터 시작하므로 마지막 인덱스는 len(people)에서 -1을 해야함
     
-    start,end = 0, len(people)-1
+    start = 0
+    end = len(people)-1
     
     #왼쪽 포인터가  오른쪽 포인터보다 작거나 작을때까지 반복
     #확인하지 않은 사람이 남아있는지 확인하기 위해
