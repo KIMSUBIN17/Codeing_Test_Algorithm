@@ -28,3 +28,20 @@ i,j번째 난쟁이를  제외한 나머지 난쟁이들을 리스트에 포함�
 h 리스트에서 2번째와 5번째 난쟁이는 제외하고, 
 나머지 0, 1, 3, 4, 6, 7, 8번째 난쟁이들의 키만 새롭게 pick_h 리스트에 담기는 것
 '''            
+
+
+'''
+# 다른 풀이_2중 for문으로 조합(combination)구현하는 것 대신 라이브러리 사용
+from  itertools import combinations
+
+h = [int(input() for _ range(9)]
+occation = list(combinations(h,7))
+for i in occation:
+if sum(i) is 100:
+    answer = list(i)
+    break
+answer.sort()
+for i in answer:
+    print(i)
+
+'''
