@@ -1,0 +1,17 @@
+-- 코드를 입력하세요
+SELECT A.ANIMAL_ID, A.NAME
+FROM ANIMAL_INS A, ANIMAL_OUTS B
+WHERE A.ANIMAL_ID = B.ANIMAL_ID
+AND A.DATETIME > B.DATETIME
+ORDER BY A.DATETIME ASC
+
+
+
+/*
+ANIMAL_INS 보호시작일 들어온
+ANIMAL_OUTS   입양일 나간
+보호시작일>입양일
+아이디, 이름 조회
+보호시작일 빠른 순
+
+*/
