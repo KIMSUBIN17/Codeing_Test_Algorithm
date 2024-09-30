@@ -1,6 +1,6 @@
 # [level 4] 그룹별 조건에 맞는 식당 목록 출력하기 - 131124 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131124?language=oracle) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131124) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@ Empty
 
 ### 제출 일자
 
-2023년 10월 3일 17:7:55
+2024년 10월 01일 00:36:58
 
 ### 문제 설명
 
