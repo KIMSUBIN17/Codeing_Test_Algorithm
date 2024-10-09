@@ -3,7 +3,7 @@ from math import ceil
 n = int(input())
 
 shorts = list(map(int, input().split()))    #2 3 1 1 2 1을 입력하면, 리스트 shorts는 [2, 3, 1, 1, 2, 1]
-# 티셔츠의 묶음 크기 ㅅ, 펜의 묶음 크기 p를 입력
+# 티셔츠의 묶음 크기 t, 펜의 묶음 크기 p를 입력
 t,p = map(int, input().split())
 
 #shorts의 각 요소 x에 대해 x/t를 올림처리하여 필요한 티셔츠 묶음수 계산하고, sum을 한다
