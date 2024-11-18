@@ -1,20 +1,27 @@
 import sys
 input = sys.stdin.readline
 
-#자연수 입력
+#입력받은 값 정수로 변환( n : 우리가 찾으려는 분해합 값)
 n = int(input())
-
+# i를 0 ~ n-1 까지 반복(n이상의 값은 분해합이 될 수 없음)
 for i in range(n):
+    # i를 문자열로 변환하여 각 자릿수를 순회할 수 있도록
+    # 문자열로 변환된 i의 각 자릿수를 정수로 변환 --> map(int, str(i))
+    # i자신과 각 자릿수의 합을 더한 값이 분해합 
     digit_sum = i + sum(map(int,str(i)))
     #생성자일 경우
     if digit_sum == n : 
         print(i)
         break
+# for 루프 다 돌때까지 break되지 않았다면 n의 생성자가 없으므로 0출력
 else:
         print(0)
 
 
 '''
+# 참고자료_파이썬 각 자릿수 분리, 더하기 
+https://go-hard.tistory.com/96
+
 Q. 입력받은 숫자 n을 문자열로 변환하는 이유
 A. 문자열로 변환하면 숫자의 각 자릿수가 독립된 문자로 분리되기 때문에, 반복문을 통해 직관적으로 코드화할 수 있음.
 복잡한 수학연산없이 간단히 자릿수 접근 가능
