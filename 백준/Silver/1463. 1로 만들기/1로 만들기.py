@@ -7,3 +7,10 @@ for i in range(2,x+1):      #2부터 x까지 i로 반복
     if i%3 == 0:        #3으로 나누어 떨어질 때, 3으로 나누는 연산
         d[i] = min(d[i],d[i//3]+1)
 print(d[x])
+
+
+'''
+#다시 풀어볼 문제
+참고링크 : https://bio-info.tistory.com/159
+
+'''
